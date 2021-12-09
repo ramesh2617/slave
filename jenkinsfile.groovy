@@ -22,8 +22,8 @@ pipeline {
 		}  
         stage('Set Git Credentials'){
 		  steps{
-            git branch: 'main',git credentialsId: 'e8fe7044-14cf-4c53-b693-cc45e142c906', url: 'https://github.com/ramesh2617/master.git'
-            git branch: 'main',git credentialsId: 'e8fe7044-14cf-4c53-b693-cc45e142c906', url: 'https://github.com/ramesh2617/slave.git'
+            git branch: 'feature',git credentialsId: 'e8fe7044-14cf-4c53-b693-cc45e142c906', url: 'https://github.com/ramesh2617/master.git'
+            git branch: 'feature',git credentialsId: 'e8fe7044-14cf-4c53-b693-cc45e142c906', url: 'https://github.com/ramesh2617/slave.git'
           }
 		}  
 
