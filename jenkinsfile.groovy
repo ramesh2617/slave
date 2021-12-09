@@ -29,8 +29,8 @@ pipeline {
 
         stage('Syncronize master'){
 		  steps {
-            sh 'git clone --bare $https://github.com/ramesh2617/master.git}master.git'
-            dir("master.git") {
+            sh 'git clone --bare $https://github.com/ramesh2617/master.git}feature.git'
+            dir("feature.git") {
                //add a remote repository
                sh 'git remote add --mirror=fetch slave ${https://github.com/ramesh2617/slave.git}'
                // update the local copy from the first repository
