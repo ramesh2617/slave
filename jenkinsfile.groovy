@@ -29,7 +29,7 @@ pipeline {
 
         stage('Syncronize master'){
 		  steps {
-	         #!bin/sh 		  
+	       sh script.sh		  
 	       sh 'git clone --bare ${://github.com/ramesh2617/master.git}feature.git'
             dir("feature.git") {
                //add a remote repository
