@@ -8,7 +8,7 @@ pipeline {
 
 	parameters {
 	    string(name: 'master', description:'testing')
-	    string(name: 'slave', description:'testing')
+	    string(name: 'slave', description:'testing1')
 	}
 	
     stages  {	
